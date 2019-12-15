@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Website Tutorial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#MyNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/w3newbie.png"/></a>
+        </div>
+        <div id="MyNavbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active "><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---Start slider---->
+    <header id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/mountains.png" />
+          <div class="carousel-caption">
+            <h1>We should,we could...</h1>
+            <button type="button" class="btn bt-default">Follow me</button>
+          </div>
+        </div>
+        <div class="item "><img src="img/red.png" /></div>
+        <div class="item "><img src="img/snow.png" /></div>
+      </div>
+      <a
+        class="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+        ><span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Prev</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+        ><span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span
+        ><span class="sr-only">Next</span></a
+      >
+    </header>
+    <!---End slider---->
+    <!---Start Cards---->
+    <div class="container text-center" id="about">
+      <h2 class="card-title">What we are using</h2>
+      <div class="row">
+        <div class="col-sm-4 using-card">
+          <img src="img/css3.png" alt="css" id="icon" />
+          <p>CSS</p>
+        </div>
+        <div class="col-sm-4 using-card">
+          <img src="img/html5.png" alt="html" id="icon" />
+          <p>HTML</p>
+        </div>
+        <div class="col-sm-4 using-card">
+          <img src="img/bootstrap.png" alt="boots" id="icon" />
+          <p>BOOTSTRAP</p>
+        </div>
+      </div>
+    </div>
+    <!---End cards---->
+    <!---Start Empire---->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 empire">
+          <h4>Here cool thing about the Empire</h4>
+          <p class="text-left">
+            Of the Human nations of the Old World, the most important by far is
+            that of the Empire of Man, more often called simply "The Empire." It
+            was forged by the warrior-king and ascended deity Sigmar from the
+            primitive Human tribes of barbarians who inhabited what became the
+            lands of the southern Empire more than 2500 years ago.
+          </p>
+
+          <p class="text-left">
+            Although not as skilled in craftsmanship as the Dwarfs or in magic
+            as the High Elves, the people of the Empire are not beholden by the
+            limits of tradition to the same extent as those elder races and
+            continue to progress culturally, technologically and magically.
+          </p>
+
+          <p class="text-left">
+            Having yet to succumb to any threat, external or internal, it is the
+            faith, the sense of righteousness, and the unconquerable spirit of
+            the realm's citizens which gives the Empire its strength, as well as
+            the ruthless efficiency of its military and religious orders.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive" src="img/bootstrap2.jpg" alt="boots" />
+        </div>
+      </div>
+    </div>
+    <!---End Empire---->
+
+    <!---Start LESS---->
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Built with SASS</h4>
+          <p class="text-left">
+            Although not as skilled in craftsmanship as the Dwarfs or in magic
+            as the High Elves, the people of the Empire are not beholden by the
+            limits of tradition to the same extent as those elder races and
+            continue to progress culturally, technologically and magically.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img class="img-responsive" src="img/sass.png" alt="boots" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Built with LESS</h4>
+          <p class="text-left">
+            Having yet to succumb to any threat, external or internal, it is the
+            faith, the sense of righteousness, and the unconquerable spirit of
+            the realm's citizens which gives the Empire its strength, as well as
+            the ruthless efficiency of its military and religious orders.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img class="img-responsive" src="img/less.png" alt="boots" />
+        </div>
+      </div>
+    </section>
+    <!---End LESS---->
+    <!---Start HIDE---->
+    <section class="container">
+      <div class="row">
+        <h4><a href="#hidden" data-toggle="collapse">Learn more</a></h4>
+        <div id="hidden" class="collapse">
+          <p>
+            The greatest nation of the Old World, the Empire of Man is ruled by
+            an Emperor and is composed of the descendants of the ancient tribes
+            of Mankind united by the great Human warrior Sigmar Heldenhammer
+            after the Battle of Black Fire Pass. Sigmar was deified after his
+            death by his people and his promise of eternal aid from the Empire
+            for the kingdoms of the Dwarfs still stands today.
+          </p>
+
+          <p>
+            This action solidified the relationship between Men and Dwarfs and
+            planted the seeds for the burgeoning Empire through trade between
+            the two races. Today, the Empire is led by Emperor Karl Franz I, who
+            rules from his court in the Imperial capital city of Altdorf.
+          </p>
+
+          <p>
+            There are ten provincial states in the Empire, each ultimately ruled
+            by a feudal lord known as an Elector Count who owes his or her power
+            to the unifying figurehead and ultimate authority of the Emperor. It
+            should be noted that the Empire is not truly a single, centralised
+            nation, but instead a confederation of individual, feudal states
+            united only by the common tongue of Reikspiel, a shared faith in
+            Sigmar and a mutual Imperial culture.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!---End HIDE---->
+    <!---Start Footer---->
+    <footer class="container-fluid text-center" id="contact">
+      <div class="row">
+        <div class="col-sm-4 ft"><h2>Contact us</h2></div>
+        <div class="col-sm-4 ft"><h2>Connect us</h2></div>
+        <div class="col-sm-4 ft">
+          <img class="img-responsive" src="img/bunny.png" alt="bunny" />
+        </div>
+      </div>
+    </footer>
+    <!---End Footer---->
+  </body>
+</html>
